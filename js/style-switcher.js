@@ -42,3 +42,15 @@ window.addEventListener("load", () => {
         dayNight.querySelector("i").classList.add("fa-moon");
     }
 })
+/* ========================== init dark mode and my colors! =========================== */
+window.onload = function() {
+    document.body.classList.toggle("dark");
+    setActiveStyle('color-3');
+    // while (true){
+    //     for (let i = 0; i < 5; i++){
+    //         await delay(5000);
+    //         let victim = 'color-' + i; 
+    //         setActiveStyle(victim);
+    //     }  
+    // }
+}
