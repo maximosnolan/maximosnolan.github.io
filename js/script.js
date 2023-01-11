@@ -1,10 +1,22 @@
 /* ============================== typing animation ============================ */
+
 var typed = new Typed(".typing",{
-    strings:["","Software Engineer","Teacher","Hardware Engineer"],
+    strings:["","Software EngineerXX","TeacherX","Hardware EngineerX"],
     typeSpeed:80,
     BackSpeed:50,
     loop:true
 })
+
+$(document).ready(function() {
+    import Typed from 'typed.js';
+
+    var newtyped = new Typed(".typing-2",{
+        strings:["Software Engineer","Teacher","Hardware Engineer"],
+        typeSpeed:80,
+        backSpeed:50,
+        loop:true
+    });
+});
 /* ============================== Aside ============================ */
 const nav = document.querySelector(".nav"),
       navList = nav.querySelectorAll("li"),

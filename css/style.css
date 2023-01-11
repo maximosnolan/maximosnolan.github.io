@@ -335,6 +335,11 @@ h3.my-profession
 {
     color: var(--skin-color);
 }
+
+.typing-2
+{
+    color: var(--skin-color);
+}
 .home-info p
 {
     margin-bottom: 70px;
