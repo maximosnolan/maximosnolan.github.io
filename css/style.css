@@ -331,14 +331,35 @@ h3.my-profession
     font-size: 30px;
     margin: 15px 0;
 }
+
+
+h3.learning
+{
+    font-size: 15px;
+    margin: 15px 0;
+}
+
 .typing
 {
     color: var(--skin-color);
 }
 
-.typing-2
+.typing2
 {
     color: var(--skin-color);
+}
+
+h3.important-information
+{
+    color: var(--skin-color);
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+h3.default
+{
+    font-size: 15px;
+    margin: 15px 0;
 }
 .home-info p
 {

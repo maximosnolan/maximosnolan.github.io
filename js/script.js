@@ -1,22 +1,6 @@
-/* ============================== typing animation ============================ */
+// import $ from 'jquery';
 
-var typed = new Typed(".typing",{
-    strings:["","Software EngineerXX","TeacherX","Hardware EngineerX"],
-    typeSpeed:80,
-    BackSpeed:50,
-    loop:true
-})
 
-$(document).ready(function() {
-    import Typed from 'typed.js';
-
-    var newtyped = new Typed(".typing-2",{
-        strings:["Software Engineer","Teacher","Hardware Engineer"],
-        typeSpeed:80,
-        backSpeed:50,
-        loop:true
-    });
-});
 /* ============================== Aside ============================ */
 const nav = document.querySelector(".nav"),
       navList = nav.querySelectorAll("li"),
@@ -102,3 +86,63 @@ const nav = document.querySelector(".nav"),
                     allSection[i].classList.toggle("open");
                 }
             }
+
+/* ============================== typing animation ============================ */
+
+
+
+var typed2 = new Typed(".typing2",{
+    strings:["Modern C++","Technical Interview Basics","Data Structures and Algorithms","Computer Architecture"],
+    typeSpeed:80,
+    BackSpeed:50,
+    loop:true
+})
+
+var typed = new Typed(".typing",{
+    strings:["","Software Engineer","Teacher","Hardware Engineer"],
+    typeSpeed:80,
+    BackSpeed:50,
+    loop:true
+})
+
+var dummyTyped = new Typed(".typingDummy",{
+    strings:[""],
+    typeSpeed:80,
+    BackSpeed:50,
+    loop:true
+})
+
+/* ============================== search ============================ */
+//function that searches for a company in the JSON data
+function search() {
+    // Get the company name from the input field
+    let companyName = document.getElementById("company-name").value;
+
+    // Fetch the JSON data from the server
+    fetch('path/to/data.json')
+    .then(response => response.json())
+    .then(data => {
+        // Filter the JSON data based on the company name
+        let searchResults = data.jobs.filter(job => job.title.toLowerCase() === companyName.toLowerCase());
+        // Clear the search results div
+        document.getElementById("results").innerHTML = "";
+        // Loop through the search results and display the job details
+        searchResults.forEach(job => {
+            document.getElementById("results").innerHTML += `
+                <div class="job">
+                    <h3>${job.title}</h3>
+                    <p>Location: ${job.location}</p>
+                    <p>Role Type: ${job.roleType}</p>
+                    <p>TC: ${job.tc}</p>
+                    <p>Difficulty Rating: ${job.difficultyRating}</p>
+                    <p>Experience: ${job.experience}</p>
+                </div>
+            `;
+        });
+    });
+}
+
+function redirect() {
+    window.location.hash = "#CompanyInfo";
+}
+
