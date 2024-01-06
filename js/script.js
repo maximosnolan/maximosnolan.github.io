@@ -91,26 +91,32 @@ const nav = document.querySelector(".nav"),
 
 
 
-var typed2 = new Typed(".typing2",{
-    strings:["Modern C++","Technical Interview Basics","Data Structures and Algorithms","Computer Architecture"],
-    typeSpeed:80,
-    BackSpeed:50,
-    loop:true
-})
+document.addEventListener("DOMContentLoaded", function() {
+    // Your existing JavaScript code here...
 
-var typed = new Typed(".typing",{
-    strings:["","Software Engineer","Teacher","Hardware Engineer"],
-    typeSpeed:80,
-    BackSpeed:50,
-    loop:true
-})
+    var typed2 = new Typed(".typing2", {
+        strings: ["Modern C++", "Technical Interview Basics", "Data Structures and Algorithms", "Computer Architecture"],
+        typeSpeed: 80,
+        backSpeed: 50,
+        loop: true
+    });
 
-var dummyTyped = new Typed(".typingDummy",{
-    strings:[""],
-    typeSpeed:80,
-    BackSpeed:50,
-    loop:true
-})
+    var typed = new Typed(".typing", {
+        strings: ["", "Software Engineer", "Teacher", "Hardware Engineer"],
+        typeSpeed: 80,
+        backSpeed: 50,
+        loop: true
+    });
+
+    var dummyTyped = new Typed(".typingDummy", {
+        strings: ["a, aa"],
+        typeSpeed: 80,
+        backSpeed: 50,
+        loop: true
+    });
+
+    // ... Rest of your code
+});
 
 /* ============================== search ============================ */
 //function that searches for a company in the JSON data

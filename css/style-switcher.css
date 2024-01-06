@@ -42,7 +42,7 @@
 }
 .style-switcher .day-night
 {
-    top: 55px;
+    top: 70px;
 }
 .style-switcher h4
 {
@@ -61,8 +61,8 @@
 .style-switcher .colors span
 {
     display: inline-block;
-    height: 30px;
-    width: 30px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
 }
 .style-switcher .color-1
@@ -84,4 +84,8 @@
 .style-switcher .color-5
 {
     background: #f021b2;
+}
+.style-switcher .color-6
+{
+    background: #00ff33;
 }

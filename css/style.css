@@ -590,6 +590,14 @@ h3.default
     text-transform: capitalize;
     color: var(--text-black-900);
 }
+.about .about-content .timeline .timeline-job
+{
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
 .about .about-content .timeline .timeline-text
 {
     line-height: 25px;
