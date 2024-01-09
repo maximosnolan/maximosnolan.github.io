@@ -18,6 +18,7 @@ function setActiveStyle(color)
         if(color === style.getAttribute("title"))
         {
             style.removeAttribute("disabled");
+            updateStarColor(color);
         }
         else
         {
@@ -25,6 +26,13 @@ function setActiveStyle(color)
         }
     })
 }
+
+function updateStarColor(color) {
+    const stars = document.querySelectorAll(".star");
+    stars.forEach((star) => {
+      star.style.color = color;
+    });
+  }
 /* ========================== theme light and dark mode =========================== */
 const dayNight = document.querySelector(".day-night");
 dayNight.addEventListener("click", () => {
@@ -54,3 +62,4 @@ window.onload = function() {
     //     }  
     // }
 }
+/* ========================== Whiskey Code =========================== */
