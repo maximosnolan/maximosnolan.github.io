@@ -152,3 +152,17 @@ function redirect() {
     window.location.hash = "#CompanyInfo";
 }
 
+function showWhiskeyFactsPanel(element) {
+    const whiskeyFactsPanel = element.closest('.portfolio-item').querySelector('.whiskey-facts-panel');
+    console.log('Element:', element);
+    console.log('whiskeyFactsPanel:', whiskeyFactsPanel);
+    whiskeyFactsPanel.classList.add('show');
+ }
+ 
+ function hideWhiskeyFactsPanel(element) {
+    const whiskeyFactsPanel = element.closest('.portfolio-item').querySelector('.whiskey-facts-panel');
+    console.log('Element:', element);
+    console.log('whiskeyFactsPanel:', whiskeyFactsPanel);
+    whiskeyFactsPanel.classList.remove('show');
+ }
+ 

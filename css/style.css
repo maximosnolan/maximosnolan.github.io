@@ -590,6 +590,7 @@ h3.default
     text-transform: capitalize;
     color: var(--text-black-900);
 }
+
 .about .about-content .timeline .timeline-job
 {
     font-weight: 700;
@@ -682,6 +683,10 @@ h3.default
 }
 .portfolio .portfolio-heading h2
 {
+    color: var(--text-black-900);
+    font-weight: 500;
+}
+.portfolio .portfolio-heading p {
     color: var(--text-black-900);
     font-weight: 500;
 }
@@ -793,6 +798,99 @@ h3.default
     height: 50px;
     padding: 0 50px;
 }
+/* Add this to your existing styles or create a new style block */
+
+
+.rating {
+    display: none; /* Hide by default */
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .star {
+    font-size: 20px;
+    color: var(--skin-color);
+    cursor: pointer;
+  }
+  
+  .star:hover {
+    color: orange;
+  }
+
+  .dividing-line {
+    width: 100%; /* Adjust the width as needed */
+    height: 1px; /* Adjust the height of the line */
+    background-color: var(--skin-color);
+    margin-top: 10px; /* Adjust the margin as needed */
+    margin-bottom: 30px;
+  }
+
+/* Add this to your existing styles or create a new style block */
+
+/* Add this to your existing styles or create a new style block */
+
+/* Keep the styling minimal for demonstration purposes. Adjust as needed. */
+.whiskey-facts-panel {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(100%, -50%);
+    background: var(--bg-black-100);
+    border: 2px solid var(--bg-black-50);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+.whiskey-facts-panel.show {
+    transform: translate(0, -50%);
+    margin-right: 25px;
+}
+
+.whiskey-facts-panel h2,
+.whiskey-facts-panel h4 {
+    color: var(--skin-color);
+}
+
+
+.whiskey-facts-panel p {
+    color: var(--text-black-700);
+}
+.whiskey-facts-panel .section-title-heading {
+    color: var(--skin-color);
+}
+
+.whiskey-facts-panel.section-title {
+    color: var(--skin-color);
+}
+
+.whiskey-facts-panel .section-title  {
+    color: var(--text-black-700);
+    margin-bottom: 10px; /* Adjust the bottom margin between h2 elements */
+    text-align: center;
+}
+
+.whiskey-facts-panel li {
+    color: var(--text-black-700);
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+
+.review-name {
+    color: var(--text-black-700);
+    margin-bottom: 10px; /* Adjust the bottom margin between h2 elements */
+    text-align: center;
+    font-size: 1.5em !important; /* Adjust the font size */
+}
+
+.review-category {
+    color: var(--skin-color) !important;;
+    margin-bottom: 10px; /* Adjust the bottom margin between h2 elements */
+    text-align: center;
+    font-size: 1.5em !important; /* Adjust the font size */
+}
+
 @media (max-width:1199px)
 {
     .section .container
