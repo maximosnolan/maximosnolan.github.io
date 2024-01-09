@@ -17,6 +17,10 @@
   <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
   <link rel="stylesheet" href="css/skins/color-6.css" class="alternate-style" title="color-6" disabled>
   <link rel="stylesheet" href="css/style-switcher.css">
+  <!-- Font Awesome stylesheet -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+
+
 </head>
 <body>
   <!-- ===== Main Container Start ===== -->
@@ -35,7 +39,7 @@
         <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
         <li><a href="#connect"><i class="fa fa-list"></i>Projects</a></li>
         <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Content</a></li> 
-        <li><a href="#whiskey"><i class="fa fa-briefcase"></i>Whiskey Reviews</a></li> 
+        <li><a href="#whiskey"><i class="fa fa-user"></i>Whiskey Reviews</a></li> 
         <li><a href="#contact"><i class="fa fa-comments"></i>Connect</a></li>
       </ul>
     </div>
@@ -538,102 +542,100 @@
       </section>
       <!-- ===== Portfolio Section End ===== -->
 
-   <!-- ===== Whiskey Review Section Start ===== -->
+ <!-- ===== Whiskey Review Section Start ===== -->
 <section class="portfolio section" id="whiskey">
   <div class="container">
-     <div class="row">
-        <div class="section-title padd-15">
-           <h2>Whiskey Reviews</h2>
+    <div class="row">
+      <div class="section-title padd-15">
+        <h2>Whiskey Reviews</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="portfolio-heading padd-15">
+        <h2>Welcome to my whiskey haven! Here, you'll find a collection of my passion project—whiskey reviews. Embarking on this journey a few years ago, my fascination with the intricacies of various distillations led me to dive deep into the art of analyzing the unique notes that distillers expertly infuse into their creations.</h2>
+        <br>
+        <h2> Hover over each bottle for more information 🥂 </h2>
+      </div>
+    </div>
+    <div class="dividing-line"></div>
+    <div class="row">
+      <!-- ====== Whiskey item start ====== -->
+      <div class="portfolio-item padd-15">
+        <div class="portfolio-item-inner shadow-dark">
+          <div class="portfolio-img" onmouseover="showWhiskeyFactsPanel(this)" onmouseout="hideWhiskeyFactsPanel(this)">
+            <img src="images/Whiskey/eagle-rare-desktop-bottle.png" alt="">
+          </div>
         </div>
-     </div>
-     <div class="row">
         <div class="portfolio-heading padd-15">
-           <h2>Welcome to my whiskey haven! Here, you'll find a collection of my passion project—whiskey reviews. Embarking on this journey a few years ago, my fascination with the intricacies of various distillations led 
-              me to dive deep into the art of analyzing the unique notes that distillers expertly infuse into their creations.</h2>
-              <br>
-            <h2> Hover over each bottle for more information 🥂 </h2>
-        </div>
-     </div>
-     <div class="dividing-line"></div>
-     <div class="row">
-        <!-- ====== portfolio item start ====== -->
-        <div class="portfolio-item padd-15">
-           <div class="portfolio-item-inner shadow-dark">
-            <div class="portfolio-img" onmouseover="showWhiskeyFactsPanel(this)" onmouseout="hideWhiskeyFactsPanel(this)">
-              <img src="images/Whiskey/eagle-rare-desktop-bottle.png" alt="">
+          <h2 class="review-name section-title-heading" style="text-align: center;">Eagle Rare 10 Year</h2>
+          <div class="dividing-line"></div>
+          <!-- Description -->
+          <h2 class="review-category sub-section-title-heading" style="font-size: smaller; text-align: center;">Histroy</h2>
+          <p class="section-title-heading" style="font-size: smaller; text-align: center;">Eagle Rare, initially a 101-proof ten-year-old Kentucky straight bourbon whiskey crafted by master distiller Charles L. Beam under Seagram, made its debut in 1975 as one of the last bourbon brands before the rise of 'small-batch bourbons.' Over the years, various companies, including the Old Prentice Distillery in Frankfort, KY, have been involved in the production and marketing of Eagle Rare. In March 1989, the Sazerac Company, a family-owned American producer based in New Orleans and the parent company of five distilleries, acquired Eagle Rare from Seagram. The distillery, originally named the George T. Stagg Distillery and later renamed the Buffalo Trace Distillery, is now under the ownership of Sazerac.</p>
+          <!-- Nose -->
+          <h2 class="review-category sub-section-title-heading" style="font-size: smaller; text-align: center;">Nose</h2>
+          <p class="section-title-heading" style="font-size: smaller; text-align: center;">Initially, I didn't get much on the nose. I'm more biased towards higher ABV whiskeys that tend to have more pronounced noses. Eagle Rare, unfortunately, isn't an exception to this rule. There are hints of toasted marshmallow, citrus, molasses, and vanilla, but they are pretty muted.</p>
+          <!-- Description -->
+          <!-- Rating Scale -->
+          <div class="rating" id="rating">
+            <span class="star" data-rating="1">&#9733;</span>
+            <span class="star" data-rating="2">&#9733;</span>
           </div>
+          <h2 class="review-category sub-section-title-heading" style="font-size: smaller; text-align: center;">Mid Palete</h2>
+          <p class="section-title-heading" style="font-size: smaller; text-align: center;">Being a Sazerac product, the mash bill has that distinct buttery, corny mid-palate. This is extremely similar to Buffalo Trace; however, the mid-palate is more eventful, and there is less of an aggressive cornish taste to it. In fact, the mash bill for Eagle Rare uses 5% less corn than Buffalo Trace. Minor notes of cinnamon, citrus, and honey stand out.</p>
+          <!-- Description -->
+          <!-- Rating Scale -->
+          <div class="rating" id="rating">
+            <span class="star" data-rating="1">&#9733;</span>
+            <span class="star" data-rating="2">&#9733;</span>
+            <span class="star" data-rating="2">&#9733;</span>
           </div>
-           <div class="portfolio-heading padd-15">
-              <h2 class = "review-name section-title-heading" style="text-align: center;">Eagle Rare 10 Year</h2>
-              <div class="dividing-line"></div>
-              <!-- Description -->
-              <h2 class="review-category sub-section-title-heading" style="font-size: smaller; text-align: center;">Histroy</h2>
-              <p class="section-title-heading" style="font-size: smaller; text-align: center;">History and description</p>
-              <!-- Nose -->
-              <h2 class="review-category sub-section-title-heading" style="font-size: smaller; text-align: center;">Nose</h2>
-              <p class="section-title-heading" style="font-size: smaller; text-align: center;">Nose</p>
-              <!-- Description -->
-              <!-- Rating Scale -->
-              <div class="rating" id="rating">
-                <span class="star" data-rating="1">&#9733;</span>
-                <span class="star" data-rating="2">&#9733;</span>
-              </div>
-              <h2 class="review-category sub-section-title-heading" style="font-size: smaller; text-align: center;">Mid Palete</h2>
-              <p class="section-title-heading" style="font-size: smaller; text-align: center;">Mid Palete</p>
-              <!-- Description -->
-              <!-- Rating Scale -->
-              <div class="rating" id="rating">
-                <span class="star" data-rating="1">&#9733;</span>
-                <span class="star" data-rating="2">&#9733;</span>
-              </div>
-              <h2 class="review-category sub-section-title-heading" style="font-size: smaller; text-align: center;">Finish</h2>
-              <p class="section-title-heading" style="font-size: smaller; text-align: center;">Finish</p>
-              <!-- Description -->
-              <!-- Rating Scale -->
-              <div class="rating" id="rating">
-                <span class="star" data-rating="1">&#9733;</span>
-                <span class="star" data-rating="2">&#9733;</span>
-              </div>
-              <h2 class="review-category sub-section-title-heading" style="font-size: smaller; text-align: center;">Value</h2>
-              <p class="section-title-heading" style="font-size: smaller; text-align: center;">Value</p>
-              <!-- Description -->
-              <!-- Rating Scale -->
-              <div class="rating" id="rating">
-                <span class="star" data-rating="1">&#9733;</span>
-              </div>
-              <h2 class="review-category sub-section-title-heading" style="font-size: smaller; text-align: center;">Overall Thoughts</h2>
-              <p class="section-title-heading" style="font-size: smaller; text-align: center;">Overall Thoughts</p>
-              <!-- Rating Scale -->
-              <div class="rating" id="rating">
-                 <span class="star" data-rating="1">&#9733;</span>
-                 <span class="star" data-rating="2">&#9733;</span>
-              </div>
-           </div>
-           
-<!-- Whiskey Facts Panel -->
-  <div class="whiskey-facts-panel" onmouseout="hideWhiskeyFactsPanel(this)">
-    <div class="whiskey-facts-content">
-     <!-- Remove the close button -->
-     <h2 class = "section-title">Eagle Rare</h2>
-     <div class="dividing-line"></div>
-     <h2  class = "section-title">Facts</h2>
-     <ul class="facts-list">
-      <li>⏰ Aged 10 years</li>
-      <li>🍾 90 Proof</li>
-      <li>💰 MSRP $89.99</li> 
-      <li>🌾 Buffalo Trace Mashbill #1</li> 
-      <li>🍶 Sazerac Company Product</li> 
-      <!-- Add more items as needed -->
-    </ul>
-     <p class="section-title-heading" style="font-size: smaller; text-align: center;">text</p>
-  
-     <!-- Other content goes here -->
-  </div>
-</div>
+          <h2 class="review-category sub-section-title-heading" style="font-size: smaller; text-align: center;">Finish</h2>
+          <p class="section-title-heading" style="font-size: smaller; text-align: center;">The finish hugs your mouth with a strong lingering presence. Extremely dry and pronounced almond notes.</p>
+          <!-- Description -->
+          <!-- Rating Scale -->
+          <div class="rating" id="rating">
+            <span class="star" data-rating="1">&#9733;</span>
+            <span class="star" data-rating="2">&#9733;</span>
+          </div>
+          <h2 class="review-category sub-section-title-heading" style="font-size: smaller; text-align: center;">Value</h2>
+          <p class="section-title-heading" style="font-size: smaller; text-align: center;">For $90, there are far better whiskies out there. While this is a staple that I had to try, and given the fact that it's relatively hard to come by, I had to give it a shot. I'd say if you're at a bar, order a tasting. Only buy this if you really enjoy Buffalo Trace.</p>
+          <!-- Description -->
+          <!-- Rating Scale -->
+          <div class="rating" id="rating">
+            <span class="star" data-rating="1">&#9733;</span>
+          </div>
+          <h2 class="review-category sub-section-title-heading" style="font-size: smaller; text-align: center;">Overall Thoughts</h2>
+          <p class="section-title-heading" style="font-size: smaller; text-align: center;">I wouldn't say I'm disappointed, but I am unimpressed. This feels like a slightly better version of Buffalo Trace, but for $50 more than Buffalo Trace's MSRP. Try this if you're at a bar or if a friend offers you a taste.</p>
+          <!-- Rating Scale -->
+          <div class="rating" id="rating">
+            <span class="star" data-rating="1">&#9733;</span>
+            <span class="star" data-rating="2">&#9733;</span>
+          </div>
         </div>
-        <!-- ====== portfolio item End ====== -->
-     </div>
-     <div class="dividing-line"></div>
+        
+        <!-- Whiskey Facts Panel -->
+        <div class="whiskey-facts-panel" onmouseout="hideWhiskeyFactsPanel(this)">
+          <div class="whiskey-facts-content">
+            <!-- Remove the close button -->
+            <h2 class="section-title">Eagle Rare</h2>
+            <div class="dividing-line"></div>
+            
+            <ul class="facts-list">
+              <li>⏰ Aged 10 years</li>
+              <li>🍾 90 Proof</li>
+              <li>💰 MSRP $89.99</li> 
+              <li>🌾 Buffalo Trace Mashbill #1</li> 
+              <li>🍶 Sazerac Company Product</li> 
+              <!-- Add more items as needed -->
+            </ul>
+            <!-- Other content goes here -->
+          </div>
+        </div>
+      </div>
+      <!-- ====== portfolio item End ====== -->
+    </div>
+    <div class="dividing-line"></div>
   </div>
 </section>
 <!-- ===== Whiskey Review Section End ===== -->
